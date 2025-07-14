@@ -1,0 +1,33 @@
+<!-- extension/popup.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AI Summary</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      width: 350px;
+      padding: 10px;
+    }
+    #summary-container {
+      border: 1px solid #ccc;
+      padding: 10px;
+      min-height: 100px;
+      white-space: pre-wrap; /* Allows text to wrap */
+      word-wrap: break-word; /* Breaks long words */
+      background-color: #f9f9f9;
+    }
+    #status {
+      color: #666;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+  <h3>Summary</h3>
+  <div id="summary-container">
+    <div id="status">Select text on a page, right-click, and choose "Summarize Selected Text".</div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
